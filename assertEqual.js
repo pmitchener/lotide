@@ -1,7 +1,7 @@
 //could not get emojis to work.
 const assertEqual = function(actual, expected) {
-  const passEmoji =  String.fromCodePoint(0x2705);
-  const failEmoji = '\u1F923';
+  const passEmoji =  '✅✅✅';
+  const failEmoji = '🛑🛑🛑';
   actual === expected ? console.log(`${passEmoji} Assertion Passed: ${actual} === ${expected}`) : console.log(`${failEmoji} Assertion Failed: ${actual} !== ${expected}`);
 };
 assertEqual("Lighthouse Labs", "Bootcamp");
