@@ -1,20 +1,9 @@
-const assertEqual = function(actual, expected) {
-  const passEmoji =  '';
-  const failEmoji = '';
-  actual === expected ? console.log(`${passEmoji} Assertion Passed: ${actual} === ${expected}`) : console.log(`${failEmoji} Assertion Failed: ${actual} !== ${expected}`);
-};
-const eqArrays = (list1, list2) => {
-  if(list1.length !== list2.length) {
+const eqArrays = require("./eqArrays");
+const eqObjects = function(object1, object2) {
+  if(typeof object1 === 'undefined' || typeof object2 === 'undefined')
+  {
     return false;
   }
-  for (let i = 0; i < list1.length; i++) {
-    if(list1[i] !== list2[i]) {
-      return false;
-    }
-  }
-  return true;
-};
-const eqObjects = function(object1, object2) {
   if(Object.keys(object1).length !== Object.keys(object2).length) {
     return false;
   }
@@ -38,10 +27,4 @@ const eqObjects = function(object1, object2) {
   }
   return true;
 };
-
-const cd = { c: "1", d: ["2", 3] };
-const dc = { d: ["2", 3], c: "1" };
-assertEqual(eqObjects(cd, dc), true); // => true
-
-const cd2 = { c: "1", d: ["2", 3, 4] };
-assertEqual(eqObjects(cd, cd2), false); // => false
+module.exports = eqObjects;
