@@ -1,11 +1,10 @@
-const assertEqual = function(actual, expected) {
-  const passEmoji =  '';
-  const failEmoji = '';
-  actual === expected ? console.log(`${passEmoji} Assertion Passed: ${actual} === ${expected}`) : console.log(`${failEmoji} Assertion Failed: ${actual} !== ${expected}`);
-};
+const assertEqual = require("./assertEqual");
 
 const countLetters = (sentence) => {
   let obj = {}
+  if(!sentence || sentence.trim().length === 0) {
+    return obj;
+  }
   for (char of sentence) {
     if (char === " ") {
       continue;
@@ -14,8 +13,4 @@ const countLetters = (sentence) => {
   }
   return obj;
 };
-//console.log(countLetters("lighthouse in the house"));
-let result = countLetters("lighthouse in the house");
-assertEqual(result["t"], 2);
-assertEqual(result["e"], 3);
-assertEqual(result["o"], 2);
+module.exports = countLetters;
