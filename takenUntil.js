@@ -10,8 +10,8 @@ const takeUntil = function(array, callback) {
   return results;
 }
 const assertArraysEqual = function(list1, list2) {
-  const passEmoji =  '✅✅✅';
-  const failEmoji = '🛑🛑🛑';
+  const passEmoji =  '';
+  const failEmoji = '';  
   eqArrays(list1, list2) ? console.log(`${passEmoji} Assertion Passed`) : console.log(`${failEmoji} Assertion Failed`);
 };
 

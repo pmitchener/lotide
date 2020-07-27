@@ -1,7 +1,7 @@
 const assertEqual = function(actual, expected) {
-  //const passEmoji =  String.fromCodePoint(0x2705);
-  //const failEmoji = '\u1F923';
-  actual === expected ? console.log(`✅✅✅ Assertion Passed: ${actual} === ${expected}`) : console.log(`🛑🛑🛑 Assertion Failed: ${actual} !== ${expected}`);
+  const passEmoji =  '';
+  const failEmoji = '';
+  actual === expected ? console.log(`${passEmoji} Assertion Passed: ${actual} === ${expected}`) : console.log(`${failEmoji} Assertion Failed: ${actual} !== ${expected}`);
 };
 const findKey = (obj, callback) => {
   for (const key in obj) {

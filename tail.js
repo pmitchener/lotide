@@ -1,5 +1,7 @@
 const assertEqual = function(actual, expected) {
-  actual === expected ? console.log(`Assertion Passed: ${actual} === ${expected}`) : console.log(`Assertion Failed: ${actual} !== ${expected}`);
+  const passEmoji =  '';
+  const failEmoji = '';   
+  actual === expected ? console.log(`${passEmoji} Assertion Passed: ${actual} === ${expected}`) : console.log(`${failEmoji} Assertion Failed: ${actual} !== ${expected}`);
 };
 const tail = function(test) {
   if (!test) {

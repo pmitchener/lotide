@@ -1,6 +1,6 @@
 const assertEqual = function(actual, expected) {
-  const passEmoji =  '✅✅✅';
-  const failEmoji = '🛑🛑🛑';
+  const passEmoji =  '';
+  const failEmoji = '';
   actual === expected ? console.log(`${passEmoji} Assertion Passed: ${actual} === ${expected}`) : console.log(`${failEmoji} Assertion Failed: ${actual} !== ${expected}`);
 };
 // allItems: an array of strings that we need to look through

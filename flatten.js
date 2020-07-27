@@ -1,6 +1,6 @@
 const assertArraysEqual = function(list1, list2) {
-  const passEmoji =  String.fromCodePoint(0x2705);
-  const failEmoji = '\u1F923';
+  const passEmoji =  '';
+  const failEmoji = '';
   eqArrays(list1, list2) ? console.log(`${passEmoji} Assertion Passed`) : console.log(`${failEmoji} Assertion Failed`);
 };
 
