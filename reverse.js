@@ -1,10 +1,10 @@
-const getArgV = () => {
+/*const getArgV = () => {
   if (!process.argv.length === 2) {
     return null;
   }
   return process.argv.slice(2);
 };
-
+*/
 const reverse = function(words) {
   if (words === null) {
     return;
@@ -17,4 +17,5 @@ const reverse = function(words) {
     console.log(reverseStr);
   }
 };
-reverse(getArgV());
+module.exports = reverse;
+//reverse(getArgV());

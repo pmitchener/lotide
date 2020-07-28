@@ -1,7 +1,6 @@
-const head = function(test){
-  if(!test)
-  {
-    return
+const head = function(test) {
+  if (!test) {
+    return;
   }
   return test[0];
 };

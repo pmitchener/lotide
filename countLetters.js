@@ -1,11 +1,9 @@
-const assertEqual = require("./assertEqual");
-
 const countLetters = (sentence) => {
-  let obj = {}
-  if(!sentence || sentence.trim().length === 0) {
+  let obj = {};
+  if (!sentence || sentence.trim().length === 0) {
     return obj;
   }
-  for (char of sentence) {
+  for (const char of sentence) {
     if (char === " ") {
       continue;
     }
