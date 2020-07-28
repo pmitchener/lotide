@@ -14,18 +14,18 @@ const without = require('./without');
 const flatten = require('./flatten');
 
 module.exports = {
-  head:   head,
-  tail:   tail,
-  middle: middle,
-  findKey: findKey,
-  findKeyByValue: findKeyByValue,
-  letterPositions: letterPositions,
+  head,
+  tail,
+  middle,
+  findKey,
+  findKeyByValue,
+  letterPositions,
   //eqObjects: eqObjects,
-  countLetters: countLetters,
-  countOnly: countOnly,
-  map: map,
-  reverse: reverse,
-  takeUntil: takeUntil,
-  without: without,
-  flatten: flatten
+  countLetters,
+  countOnly,
+  map,
+  reverse,
+  takeUntil,
+  without,
+  flatten
 };
