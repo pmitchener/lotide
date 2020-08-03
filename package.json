@@ -2,7 +2,7 @@
   "name": "@pmitchener/lotide",
   "version": "1.0.0",
   "email": "pmitchener@rogers.com",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Lighthouse labs lotide project",
   "main": "assertArraysEqual.js",
   "directories": {
