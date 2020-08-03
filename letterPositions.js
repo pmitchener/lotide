@@ -6,7 +6,8 @@ const letterPositions = function(sentence) {
       continue;
     }
     results[sentence[i]] ? results[sentence[i]].push(i) : results[sentence[i]] = [i];
-  }  
+  }
   return results;
 };
+console.log(letterPositions("hello"));
 module.exports = letterPositions;

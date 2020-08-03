@@ -5,8 +5,7 @@ const flatten = (listOfList) => {
       for (let word of list) {
         newArray.push(word);
       }
-    }
-    else {
+    } else {
       newArray.push(list);
     }
   }

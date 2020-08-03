@@ -1,9 +1,11 @@
+const  assert = require('chai').assert;
 const letterPositions = require('../letterPositions');
-const assertArraysEqual = require('../assertArraysEqual');
 
-let arr = letterPositions("hello");
-assertArraysEqual(arr["h"], [0]);
-assertArraysEqual(arr["e"], [1]);
-assertArraysEqual(arr["l"], [2,3]);
-assertArraysEqual(arr["o"], 4);
-//console.log(letterPositions("lighthouse in the house"));
+describe("letterPositions function", () => {
+  it("letterPositions('hello') => { h: [ 0 ], e: [ 1 ], l: [ 2, 3 ], o: [ 4 ] }", () => {
+    assert.deepEqual(letterPositions('hello'), { h: [ 0 ], e: [ 1 ], l: [ 2, 3 ], o: [ 4 ] });
+  });
+  it("letterPositions('')", () => {
+    assert.deepEqual(letterPositions(''), {});
+  });
+});
